@@ -11,3 +11,6 @@ Moving Cast é uma plataforma motivacional de aceleração de carreiras baseada 
 - Javascript
 - React JS
 
+### Autores: 
+- Ana Clara Fagundes 
+
