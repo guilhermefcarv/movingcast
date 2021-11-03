@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Poppins:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header #menu {
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+/* 
+header #menu img {
+    fill: black;
+    font-weight: bold;
+    font-size: 1rem;
+} */
+
+header .banner {
+    background-color:black;
+    color: white;
+    padding: 3rem 2rem;
+    margin: 1rem 1rem;
+    height: 25vh
+}
+
+header .banner h1 {
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+header .banner p{
+    font-family: 'Abel';
+}
+
+label {
+    display: block;
+    padding: 0 20px 1rem 20px;
+    border-bottom: 3px solid black;
+    margin: 1rem;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    color: black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+
+}
+
+.podcast-card {
+    padding: 1rem 0;
+    margin: auto;
+    max-width: 500px;
+}
+
+
+.podcast-card h1 {
+    font-family: 'Poppins';
+    text-align: left;
+    padding-bottom: 10px;
+    margin:auto;
+    width: 85%;
+}
+
+.podcast-card p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 85%;
+    text-align: justify;
+}
+
+.podcast-card img {
+    width: 85%;
+    height: 300px; 
+    object-fit: cover;
+}
+
+.podcast-card a {
+    color: black;
+}
