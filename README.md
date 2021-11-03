@@ -13,4 +13,7 @@ Moving Cast é uma plataforma motivacional de aceleração de carreiras baseada 
 
 ### Autores: 
 - Ana Clara Fagundes 
-
+-Guilherme
+-Sara
+-Stanrley
+-Vinicius 
