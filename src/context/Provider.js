@@ -3,15 +3,13 @@
 import React, { useEffect, useState } from 'react';
 // importar serviços
 import Context from './Context';
-import { categoriesMock, podcastsMock } from '../services/mockAPI';
+import podcastsMock, { categoriesMock } from '../services/mockAPI';
 
 function Provider({ children }) {
     // array de objetos com titulo, subtitulo e imagem do podcast
     const [podcasts, setPodcasts] = useState([]);
     // array de categorias com nome da categoria
     const [categories, setCategories] = useState([]);
-    // array de strings, onde cada string será o enderço da playlist
-    const [pathEpisodes, setPathEpisodes] = useState([]);
     // array de objetos de podcasts filtrados
     const [podcastsF, setPodcastsF] = useState([]);
 
@@ -28,9 +26,9 @@ function Provider({ children }) {
     }
 
     function getPodcastsByCategory(categorieString) {
-        const podcastsFiltered = podcasts.filter((podcast) => {
-            podcast.categorias.include(categorieString);
-        });
+        console.log(`getPodcastsByCategory ${categorieString}`)
+        const podcastsFiltered = podcasts.filter((podcast) => podcast.categorias.includes(categorieString));
+        console.log(podcastsFiltered);
         return podcastsFiltered;
     }
 
@@ -43,7 +41,6 @@ function Provider({ children }) {
     const dataValue = {
         podcasts,
         categories,
-        pathEpisodes,
         getPodcastsByCategory,
         podcastsF,
         setPodcastsF,

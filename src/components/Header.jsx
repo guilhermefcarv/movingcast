@@ -4,6 +4,15 @@ function Header() {
     const getTitle = () => {
         const path = window.location.pathname; // pega  url atual;
         let title;
+        if(path.includes('financas')) {
+            return 'Podcasts sobre finanças';
+        }
+        if(path.includes('sociais')) {
+            return 'Podcasts sobre sociedade';
+        }
+        if(path.includes('tecnicos')) {
+            return 'Podcasts técnicos';
+        }
         if(path.includes('categories')) {
             return 'Categorias';
         }
@@ -12,28 +21,20 @@ function Header() {
         }
         if(path.includes('podcasts')) {
             return 'Podcasts'
+        } else {
+            return 'Moovingcast'
         }
     }
     return (
         <header>
-            <div class="banner">
+            <div className="banner">
                 <h1>
                     { getTitle() }
                 </h1>
-                <p>Subtítulo</p>
+                <p>Acelerando sua carreira a um play de distância</p>
             </div>
         </header>
     );
 }
-<header>
-        <div id="menu">
-            <a id="home" href="./index.html">Framework</a>
-            <a href="" id="categories">Categorias</a>
-        </div>
-        
-        
-        
-        
-</header>
     
 export default Header;
