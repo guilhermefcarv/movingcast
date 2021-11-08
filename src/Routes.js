@@ -16,7 +16,6 @@ function Routes() {
         <Route exact path="/categories/tecnicos"  component= { Podcasts }/>
         <Route exact path="/categories/autorais"  component= { Podcasts }/>
         <Route exact path="/categories/podcast/:id"  component= { Episodes }/>
-
     </Switch>
    )
 }

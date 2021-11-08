@@ -12,7 +12,6 @@ const podcastsMock = [
             'Social', 'Finanças'
         ],
         imgSrc: 'https://halfdeaf.com.br/img/podcasts/2929952/0f9dd58153ea36939656e391b41adaa4-original.jpg',
-
     },
     {
         nome: 'Diário de bordo',
@@ -125,6 +124,20 @@ const podcastsMock = [
             'Técnico'
         ],
         imgSrc: 'https://i.scdn.co/image/dd09203b24d4656792d833323ca4835abce6bee8',
+    },
+    {
+        nome: 'Padawans Podcast',
+        id: 10,
+        autor: [
+            'Sara Iglesias'
+        ],
+        descricao: '',
+        playlist : 'https://open.spotify.com/embed/playlist/0ljqOPpie1I3i7hKgYifaN?utm_source=generator%22',
+        produtora: 'Sara Produções',
+        categorias: [
+            'Autorais', 
+        ],
+        imgSrc: 'https://bandodequadrados.com/img/imagem_noticia/paciencia-voce-deve-ter-meu-jovem-padawan-20201008142148.jpg',
     },
 ];
 
